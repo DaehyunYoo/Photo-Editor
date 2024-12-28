@@ -23,9 +23,12 @@
 *.jpg
 *.pt
 *.zip
+*.pth
 
 /annotations
 /test2017
 /train2017
 /unlabeled2017
 /val2017
+/visualization_results
+/COCO_dataset

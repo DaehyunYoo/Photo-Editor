@@ -5,7 +5,7 @@ from torchvision.datasets import CocoDetection
 import matplotlib.pyplot as plt
 
 
-trainset = CocoDetection(root='/home/baekw92/ai_editor/train2017', annFile='/home/baekw92/ai_editor/annotations/instances_train2017.json')
+trainset = CocoDetection(root='/home/work/daehyun/Photo-Editor/train2017', annFile='/home/work/daehyun/Photo-Editor/annotations/instances_train2017.json')
 # validset = CocoDetection(root='val2017', annFile='annotations/instances_val2017.json')
 
 
