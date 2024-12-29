@@ -40,6 +40,14 @@ SAM 실행 & 결과 확인:
 streamlit run seg_app/app3.py
 ```
 
+## Stable-Diffusion
+
+Stable Diffusion Inference:
+
+```
+python T2I/sd_txt2img.py
+```
+
 ## Inpainting
 
 ## Image Generation
