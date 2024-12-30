@@ -1,5 +1,5 @@
-*.jpg
-*.jpeg
+# *.jpg
+# *.jpeg
 *.png
 *.bmp
 *.tif

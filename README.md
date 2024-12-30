@@ -1,53 +1,97 @@
 # Photo-Editor
+An interactive demo that combines Segment Anything Model (SAM), GPT prompt engineering, and Stable Diffusion for intelligent image inpainting.
 
-## Image Segmentation
+## Overview
+This project integrates three powerful AI models to create an advanced image editing tool:
+1. **SAM** (Segment Anything Model) for precise object segmentation
+2. **GPT** for intelligent prompt engineering 
+3. **Stable Diffusion** for high-quality image inpainting
 
-coco dataset download
+## Features
+- Interactive object selection using SAM
+- Intelligent prompt generation using GPT
+- High-quality image inpainting with Stable Diffusion
+- User-friendly interface built with Streamlit
 
+## Quick Start
+
+### 1. Make Mask with SAM
+Run the mask creation interface:
+```bash
+streamlit run app_save_mask.py
 ```
+
+### 2. Image Inpainting
+Runt the inpainting interface:
+```bash
+stramlit run app_inpaint.py
+```
+
+### Sample Results
+<div style="display: flex; justify-content: space-between;">
+    <img src="sample_result/images.jpeg" width="30%" alt="Original Image">
+    <img src="sample_result/mask.jpg" width="30%" alt="Mask">
+    <img src="sample_result/image_result.jpg" width="30%" alt="Result">
+</div>
+<div style="display: flex; justify-content: space-between;">
+    <p align="center">Original</p>
+    <p align="center">Mask</p>
+    <p align="center">Result</p>
+</div>
+
+## Advanced Features
+
+### Image Segmentation
+
+Download COCO dataset:
+```bash
 bash coco_download.sh
 ```
 
-Train Mask R-CNN
-
-```
+Train Mask R-CNN:
+```bash
 python Mask_RCNN/adjust_train.py
 ```
 
-### SAM
-Install SAM:
+### SAM Integration
 
-```
+Install SAM:
+```bash
 pip install git+https://github.com/facebookresearch/segment-anything.git
 ```
 
-이미지 전체 영역 Segmentation:
-
-```
-python SAM/sam_generator.py
+Full Image Segmentation:
+```bash
+python SAM/sem_generator.py
 ```
 
 Prompting Segmentation:
-
-```
+```bash
 python SAM/sam_predictor.py
 ```
 
-### Demo page
-
-SAM 실행 & 결과 확인:
-```
+### Interactive Demo
+Launch the interactive demo:
+```bash
 streamlit run seg_app/app3.py
 ```
 
-## Stable-Diffusion
-
-Stable Diffusion Inference:
-
-```
+### Stable Diffusion
+Run Stable Diffusion interface:
+```bash
 python T2I/sd_txt2img.py
 ```
 
-## Inpainting
+## Installation
 
-## Image Generation
+1. Clone the repository:
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Set up environment variable:
+```bash
+export OPENAI_API_KEY="your-api-key"
+```
