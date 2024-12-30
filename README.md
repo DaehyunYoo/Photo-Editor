@@ -28,16 +28,25 @@ stramlit run app_inpaint.py
 ```
 
 ### Sample Results
-<div style="display: flex; justify-content: space-between;">
-    <img src="sample_result/images.jpeg" width="30%" alt="Original Image">
-    <img src="sample_result/mask.jpg" width="30%" alt="Mask">
-    <img src="sample_result/image_result.jpg" width="30%" alt="Result">
-</div>
-<div style="display: flex; justify-content: space-between;">
-    <p align="center">Original</p>
-    <p align="center">Mask</p>
-    <p align="center">Result</p>
-</div>
+<table>
+<tr>
+    <td width="33%" align="center">
+        <img src="sample_result/images.jpeg" width="100%"/>
+        <br>
+        Original
+    </td>
+    <td width="33%" align="center">
+        <img src="sample_result/mask.jpg" width="100%"/>
+        <br>
+        Mask
+    </td>
+    <td width="33%" align="center">
+        <img src="sample_result/image_result.jpg" width="100%"/>
+        <br>
+        Result
+    </td>
+</tr>
+</table>
 
 ## Advanced Features
 
