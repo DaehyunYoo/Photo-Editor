@@ -5,8 +5,6 @@
 *.tif
 *.tiff
 *.heic
-*.JPG
-*.JPEG
 *.PNG
 *.BMP
 *.TIF
@@ -20,7 +18,6 @@
 *.json
 *.cfg
 *.pkl
-*.jpg
 *.pt
 *.zip
 *.pth
